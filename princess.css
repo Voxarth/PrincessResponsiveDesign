@@ -17,10 +17,15 @@ body{
     width: 100%;
 }
 
+#nav{
+    display: inherit;
+    justify-items: 
+}
+
 .nav h2{
     display: flex;
     justify-self: left;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     text-shadow: 3px 4px 5px black;
 
 }
@@ -52,10 +57,30 @@ body{
   /* Menu "burger"
    =============== */
 
+   /* Class qui vont avec l'interaction JS
+    ====================================== */
+
+
+.hidden{
+    visibility: hidden;
+
+}
+
+.visible{
+    visibility: visible;
+}
+
+
+/* Media Query pour browser et mobile
+ ==================================== */
+
 @media (min-width: 1000px){
     #MB{
         visibility: hidden;
         
+    }
+    #nav{
+        visibility: visible;
     }
 }
 
@@ -94,7 +119,7 @@ body{
     }
 
     #nav{
-        visibility: hidden;
+        
         background-color: rgba(0, 0, 0, 0.247);
         border-radius: 10%;
     }

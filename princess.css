@@ -17,50 +17,28 @@ body{
     width: 100%;
 }
 
-.nav i{
+.nav h2{
     display: flex;
     justify-self: left;
-    font-size: 50px;
     color: whitesmoke;
     text-shadow: 3px 4px 5px black;
 
 }
 
-.nav i:hover{
-    animation-duration: 8s;
-    animation-name: coloredhat;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-}
 
-@keyframes coloredhat{
-    10%{color: violet;
-    }
-    20%{color:rgb(191, 61, 243);
-    }
-    30%{color:rgb(146, 87, 201);
-    }
-    40%{color:rgb(63, 66, 245)
-    }
-    50%{color: rgb(91, 158, 235);
-    }
-    60%{color: rgb(41, 187, 206)
-    }
-    70%{color: rgb(79, 248, 192);
-    }
-    80%{color:rgb(71, 238, 80);
-    }
-    90%{color:rgb(144, 245, 49);
-    }
-    100%{color:rgb(255, 236, 62);
-    }
-}
 
 
 .burger-menu{
     font-family: 'Poppins';
     font-size: 130%;
     
+    
+}
+
+.burger-menu a{
+    color: whitesmoke;
+    text-shadow: 0px 10px 10px black;
+    text-decoration: none;
 }
 
 
@@ -73,11 +51,60 @@ body{
   }
   /* Menu "burger"
    =============== */
+
+@media (min-width: 1000px){
+    #MB{
+        visibility: hidden;
+        
+    }
+}
+
  @media (max-width: 1000px){
+
+    #nav{
+
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .burger-menu{
+        position: fixed;
+        right: 0em;
+    }
+
+
+    .burger-menu i:hover{
+        cursor: pointer;
+
+    }
+
+    .burger-menu i{
+        display: flex;
+        width: 1em;
+        height: 1em;
+        font-size: 200%;
+        justify-self:right;
+        align-self:right;
+        color: whitesmoke;
+        text-shadow: 0px 1px 5px rgb(0, 0, 0);
+        
+        
+    }
+
+    #nav{
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.247);
+        border-radius: 10%;
+    }
+
     
+
  
  
   }
+
   /* Centrage de texte et icons
    ============================= */
   
